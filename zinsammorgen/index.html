@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zinsrechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Zinsrechner</h1>
+  <img src="zinsrechnungbild_02.jpg" alt="zinsen" width="
+  600" height="200">
+  <h3>Bitte geben Sie anstatt eines Kommas einen Punkt ein. 
+    Berechnung des Kapitals</h3>
+    <h5>ohne Gewähr</h5>
+  <!-- löschbutton-->
+  <button type="button" id="loeschen">Löschen</button>
+
+  <form id="zinsForm">
+    <label for="kapital">Kapital (k):</label>
+    <input type="number" id="kapital" name="kapital" step="0.01" required>
+    
+    <label for="zinssatz">Zinssatz (p):</label>
+    <input type="number" id="zinssatz" name="zinssatz" step="0.01" required>
+    
+    <label for="zeit">Zeit (t in Tagen):</label>
+    <input type="number" id="zeit" name="zeit" required>
+    
+    <button type="button" id="berechnen">Berechnen</button>
+  </form>
+  <div id="ergebnis"></div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
